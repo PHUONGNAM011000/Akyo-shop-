@@ -1,0 +1,16 @@
+{
+  "users": [
+    {
+      "valueUserName": "nam123",
+      "valueEmail": "18521125@gm.uit.edu.vn",
+      "valuePassword": "111111",
+      "id": 1
+    },
+    {
+      "valueUserName": "nam123",
+      "valueEmail": "namhungvuong00@gmail.com",
+      "valuePassword": "111111",
+      "id": 2
+    }
+  ]
+}

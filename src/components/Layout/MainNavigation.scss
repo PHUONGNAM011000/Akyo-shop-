@@ -1,0 +1,82 @@
+$primary-color: #fff;
+$secondary-color: #ff1b68;
+$text-color: #1a2b5f;
+
+.header {
+  width: 100%;
+  padding: 16px 0;
+  background: #ccc;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3rem;
+  margin: auto;
+  max-width: 1200px;
+  min-width: 600px;
+
+  & > div {
+    display: inline-block;
+  }
+
+  &__brand {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 3.5rem;
+    color: $text-color;
+  }
+}
+
+.main-nav {
+  display: inline-block;
+
+  &__items {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__item {
+    display: inline-block;
+    margin: 0 1.6rem;
+
+    & a {
+      text-decoration: none;
+      font-size: 2rem;
+    }
+
+    & span {
+      font-size: 2.5rem;
+    }
+
+    & a,
+    & span {
+      color: #1a2b5f;
+      transition: color 0.5s ease;
+    }
+
+    & a:active,
+    & a:hover,
+    & span:hover,
+    & span:active {
+      color: $primary-color;
+    }
+
+    &--cta a {
+      padding: 1rem 2rem;
+      background: $secondary-color;
+      border-radius: 0.8rem;
+      transition: background 0.25s ease-in;
+      color: $text-color;
+    }
+
+    &--cta a:hover,
+    &--cta a:active {
+      background: $text-color;
+    }
+  }
+}
